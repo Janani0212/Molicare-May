@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="ad.size" content="width=970,height=250" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>970x250</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div id="image1" class="absolute top-0 right-0 h-full image1"></div>
+    <div id="image2" class="absolute top-0 right-0 h-full image2"></div>
+    <div id="image3" class="absolute top-0 right-0 h-full image3"></div>
+
+    <div id="image4" class="absolute top-0 right-0 h-full image4"></div>
+
+    <div id="image5" class="absolute top-0 right-0 h-full image5"></div>
+    <div id="image7" class="absolute top-0 right-0 h-full image7"></div>
+    <div id="image6" class="absolute top-0 right-0 h-full image6"></div>
+  </div>
+
+  <script>
+		var clickTag = ""; 
+		document.querySelector('.app').addEventListener("click", () => {
+      window.open(clickTag, "_blank");
+    });
+		
+    gsap.timeline()
+      .from("#image1", {opacity:0, scale:1, y:-25, ease:"in", duration:0.75}, "<")
+      .from("#image2", {opacity:0, scale:1, x: -25, ease:"in", duration:0.75},"<")
+      .from("#image3", {opacity:0, scale:1, x: 25, ease:"in", duration:0.75},"<")
+      .to("#image2, #image3", {opacity:0}, "+=1.5")
+
+      .from("#image4", {opacity:0, x: -25, ease:"in", duration:0.5},"-=0.25")
+      .to("#image4", {opacity:0}, "+=1")
+
+      .from("#image5", {opacity:0, scale:1.25, ease:"in", duration:0.25},"<")
+      .from("#image7", {opacity:0, scale:0.75, ease:"in", duration:1.25},"<")
+      .from("#image6", {opacity:0, scale:0.75, ease:"in", duration:0.25},"-=0.35");
+  </script>
+</body>
+</html>

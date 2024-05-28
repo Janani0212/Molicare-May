@@ -1,0 +1,87 @@
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+  background: #00bfff;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.image1 {
+  background: url('../img/image1_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+}
+.image2 {
+  background: url('../img/image2_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+  z-index: 2;
+  }
+.image3 {
+  background: url('../img/image3_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+}
+.image4 {
+  background: url('../img/image4_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+  z-index: 2;
+}
+.image5 {
+  background: url('../img/image5_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+  z-index: 2;
+}
+.image6 {
+  background: url('../img/image6_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+  z-index: 1;
+}
+.image7 {
+  background: url('../img/image7_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+}
+.image8 {
+  background: url('../img/image8_2x.png') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 300px;
+}
